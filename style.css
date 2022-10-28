@@ -38,6 +38,7 @@
 
 .buttons {
     grid-column: -2 / -1;
+    margin-top: 20px;
    
 }
 
@@ -59,14 +60,9 @@ input {
    border: 1px solid #E2E8F0;
 }
 
-.buttons {
-    padding-left: 200px;
-    grid-column: -3 / -1;
-}
-
 button {
     background-color: #1992D4;
-    border-radius: 18px;
+    border-radius: 20px;
     border-style: none;
     color: #FFFFFF;
     cursor: pointer;
@@ -74,7 +70,7 @@ button {
     font-size: 14px;
     font-weight: 500;
     height: 30px;
-    width: 5rem;
+    width: 6rem;
     line-height: 10px;
     list-style: none;
     margin: 0;
@@ -185,10 +181,14 @@ img {
 
 .cards-bar {
     background-color: #FFFFFF;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
     margin-right: 10px;
+}
+
+.cards-bar p, .cards-bar h1 {
+    padding: 5px 10px;
 }
 
 .card {
@@ -250,11 +250,8 @@ img {
 }
 
 .treding {
-    margin-right: 10px;
-    display: grid;
-    background-color: #FFFFFF;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    margin-right: 10px; 
+    background-color: #FFFFFF; 
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
     
@@ -267,8 +264,26 @@ img {
 
 .cards-trending {
     display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4, 80px);
     margin-left: 30px;
     margin-top: 20px;
+    grid-template-areas: "icon text"
+    "icon text"
+    "icon text"
+    "icon text";
    
 }
+
+.user-icon {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.user {
+    margin-top: 10px;
+    padding-right: 20px;
+    
+}
+   
 
